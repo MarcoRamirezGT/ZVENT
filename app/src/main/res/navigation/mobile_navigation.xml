@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.zvent.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro1"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.zvent.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.zvent.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.zvent.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/registro1"
+        android:name="com.example.zvent.registro1"
+        android:label="Registrando (1/10)"
+        tools:layout="@layout/registro1_fragment" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro2"
+        android:name="com.example.zvent.registro2"
+        android:label="Registrando (2/10)"
+        tools:layout="@layout/registro2_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro3"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+        <argument
+            android:name="nombre"
+            app:argType="string"
+            android:defaultValue="No" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro3"
+        android:name="com.example.zvent.registro3"
+        android:label="Registrando (3/10)"
+        tools:layout="@layout/registro3_fragment" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro4"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro4"
+        android:name="com.example.zvent.registro4"
+        android:label="Registrando (4/10)"
+        tools:layout="@layout/registro4_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro5"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro5"
+        android:name="com.example.zvent.registro5"
+        android:label="Registrando (5/10)"
+        tools:layout="@layout/registro5_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro6"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro6"
+        android:name="com.example.zvent.registro6"
+        android:label="Registrando (6/10)"
+        tools:layout="@layout/registro6_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro7"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro7"
+        android:name="com.example.zvent.registro7"
+        android:label="Registrando (7/10)"
+        tools:layout="@layout/registro7_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro8"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro8"
+        android:name="com.example.zvent.registro8"
+        android:label="Registrando (8/10)"
+        tools:layout="@layout/registro8_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro9"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro9"
+        android:name="com.example.zvent.registro9"
+        android:label="Registrando (9/10)"
+        tools:layout="@layout/registro9_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/registro10"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro10"
+        android:name="com.example.zvent.registro10"
+        android:label="Registrando (10/10)"
+        tools:layout="@layout/registro10_fragment">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/resultados"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultados"
+        android:name="com.example.zvent.resultados"
+        android:label="Resultados"
+        tools:layout="@layout/resultados_fragment" >
+        <action
+            android:id="@+id/restart"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+</navigation>
